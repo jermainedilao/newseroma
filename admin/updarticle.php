@@ -18,7 +18,7 @@
 
 			update_article($articleid, $articletitle, $articlebody, $articlestatus, $articleimgname, $articleimgtype, $articleimgurl);
 			
-			echo 'Successfuly updated article.';
+			echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully updated article.</div>";
 			header("Refresh:1");
 		}
 		else
@@ -47,7 +47,7 @@
 						echo "Sorry, there was a problem uploading your file.";  
 					}  
 					
-					echo 'Successfuly updated article.';
+					echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully updated article.</div>";
 					header("Refresh:1");
 			}
 			else

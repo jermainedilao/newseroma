@@ -6,7 +6,7 @@
 	{
 		delete_brokers($_POST['id']);
 		header("Refresh:1");
-		echo "Broker Successfully Deleted";
+		echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfuly deleted broker.</div>";
 	}
 ?>
 <!DOCTYPE html>

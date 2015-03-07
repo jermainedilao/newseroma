@@ -1,6 +1,6 @@
 <?php
 	include "../db.php";
-	
+	ob_start();
 	if($_SESSION['isloginadmin'] == true)
 	{
 		$page = isset($_GET['p']) ? $_GET['p'] : 'addarticle';
@@ -81,28 +81,28 @@
 				font-style: italic;
 			}
 			.container{
-        margin-bottom: 100px; 
-    }
-    
-		.btn{
-			background-color: #AB3334;
-			border-color: #AB3334;
-			color: #FFF;
-		}
-		  
-		.btn:hover{
-			background-color: #DDA185;
-			border-color: #DDA185;
-		}
-		 
-    .footer{
-        background-color: #AB3334;
-        color: #fff;
-        text-align: center;
-        height: 70px;
-        vertical-align: middle;
-        line-height: 70px;    
-    }
+				margin-bottom: 100px; 
+			}
+			
+			.btn{
+				background-color: #AB3334;
+				border-color: #AB3334;
+				color: #FFF;
+			}
+			  
+			.btn:hover{
+				background-color: #DDA185;
+				border-color: #DDA185;
+			}
+				 
+			.footer{
+				background-color: #AB3334;
+				color: #fff;
+				text-align: center;
+				height: 70px;
+				vertical-align: middle;
+				line-height: 70px;
+			}
 		</style>
 	</head>
 	<body>
@@ -180,7 +180,7 @@
 			</div>
 		</div>
     
-    <div class="footer">
+    <div class="footer pull-bottom">
         &copy; Seroma Residences, 2015
      </div>
     

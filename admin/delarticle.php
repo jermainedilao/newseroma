@@ -4,8 +4,9 @@
 	if(isset($_POST['submit']))
 	{
 		delete_article($_POST['articleid']);
+		echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully deleted article.</div>";
+		unset($_POST['submit']);
 		header("Refresh:1");
-		echo "Successfuly deleted article";
 	}
 ?>
 <!DOCTYPE html>

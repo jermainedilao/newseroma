@@ -7,7 +7,7 @@
 		del_finishes($finishesid);
 		
 		echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully deleted unit finish.</div>";
-    header("Refresh:1");
+		header("Refresh:1");
 	}
   
   $getfinishes = get_finishes();

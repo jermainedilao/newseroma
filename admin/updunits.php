@@ -20,7 +20,7 @@
 
 			update_unit($unitid, $unitname, $unittype, $unitarea, $unitimgname, $unitimgtype, $unitimgurl, $unitfinishes1, $unitfinishes2, $unitfinishes3, $unitfinishes4, $unitfinishes5, $unitstatus);
 				
-			echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfuly updated unit.</div>";
+			echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully deleted article.</div>";
 			header("Refresh:1");
 		}
 		else
@@ -55,7 +55,7 @@
 					echo "Sorry, there was a problem uploading your file.";  
 				}  
 				
-				echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfuly updated unit.</div>";
+				echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully deleted article.</div>";
 				header("Refresh:1");
 			}
 			else

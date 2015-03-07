@@ -21,7 +21,7 @@
 		if($blocker != 1)
 		{
 			add_brokers($broker_username, $broker_password, $broker_name, $broker_contact, $broker_email, $broker_status);
-			echo 'Broker Successfully Added';
+			echo "<div class = 'alert alert-success' style = 'width: 265px;'>Broker successfuly added.</div>";
 		}
 		else
 			echo '<code>Username already existing.</code>';

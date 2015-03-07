@@ -25,7 +25,7 @@
 				echo "Sorry, there was a problem uploading your file.";  
 			}  
 			
-			echo 'New article has been uploaded.';
+			echo "<div class = 'alert alert-success' style = 'width: 265px;'>New article has been added.</div>";
 		}
 		else
 		{

@@ -8,7 +8,7 @@
     update_amenities($amenityname, $amenityid, $amenitystatus);
     
     echo "<div class = 'alert alert-success' style = 'width: 265px;'>Successfully updated amenities.</div>";
-		header("Refresh:1");
+	header("Refresh:1");
   }
   $getupdateamenities = get_update_amenities();
  ?>
