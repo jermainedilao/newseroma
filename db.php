@@ -674,7 +674,7 @@
 		session_regenerate_id();
 	}
 	
-	function get_active_users()
+  function get_active_users()
 	{
 		$db = site_db();
 		$sql = "select * from users where status=?";
@@ -695,3 +695,38 @@
       $db = null;
    }
 
+   function get_broker_msgs($id){
+    $db = site_db();
+		$sql = "select * from messages where recipient=?";
+		$st = $db->prepare($sql);
+		$st->execute(array($id));
+		$rows = $st->fetchAll();
+		$db = null;
+		
+		return $rows;
+   }
+
+   function count_new_msg($userid){
+   
+    $db = site_db();
+    $sql = "select count(viewed) from messages where recipient=? and viewed=?";
+    $st = $db->prepare($sql);
+    $st->execute(array($userid, 0));
+    $rows = $st->fetchColumn(); 
+    $db = null;
+    
+    if($rows == 0)
+       return false;
+    else
+       return $rows;
+   }
+   
+   function set_msg($userid)
+   {
+     $db = site_db();
+     $sql = "update messages set viewed = ? where recipient = ?";
+     $st = $db->prepare($sql);
+     $st->execute(array(1,$userid));
+     $db = null;
+   }
+   
