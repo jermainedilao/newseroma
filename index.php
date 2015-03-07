@@ -71,6 +71,10 @@
 				font-style: italic;
 			}
       
+      .container{
+        margin-bottom: 100px; 
+      }
+      
 		  .btn{
 			background-color: #AB3334;
 			border-color: #AB3334;
@@ -81,6 +85,15 @@
 			background-color: #DDA185;
 			border-color: #DDA185;
 		  }
+      
+      .footer{
+        background-color: #AB3334;
+        color: #fff;
+        text-align: center;
+        height: 70px;
+        vertical-align: middle;
+        line-height: 70px;    
+      }
 		</style>
 	</head>
 	<body>
@@ -115,8 +128,11 @@
 				<?php include_once($content); ?>
 			</div>
 		</div>
-		<footer>
-		</footer>
+		
+    <div class="footer">
+        &copy; Seroma Residences, 2015
+    </div>
+    
 		<script src="bootstrap/js/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 	</body>

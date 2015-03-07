@@ -1,67 +1,40 @@
+<?php
+	$viewbrokerprofile = view_broker_profile($_SESSION['userid']);
+  $id = $_SESSION['userid'];
+  set_msg($id);
+  $getbrokermsgs = get_broker_msgs($id);
+  $countnewmsg = count_new_msg($id);
+?>
+
 <!DOCTYPE html>
 <head><title>Answered Messages</title></head>
 <html>
 	<body>
+    <h4>BROKER PROFILE</h4><hr/>
 		<div class = "col-md-3">
-			<br>
-			<p>
-				<h4>Broker / Agent</h4>
-				<br />
-				<h5><b>Name:</b></h5>
-				John Doe
-				<br /><br />
-				<h5><b>Email:</b></h5>
-				johndoeBroker@asd.com
-			</p>
+				<div>
+					<h5><b>Name:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['name']);?>
+				</div><br/>
+				<div>
+					<h5><b>Email:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['email']);?>
+				</div><br/>
+				<div>
+					<h5><b>Contact:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['contact']);?>
+				</div>
 		</div>
 		<div class = "col-md-8">
-			  <h3 class = "pull-left">ANSWERED MESSAGES</h3>
-			  <br /><br /><br /><br />
-			  <form class = "form">
-				<div class = "form-group">
-				  <h5><b>Name: Jera Soon</b></h5>
-				  <h5><b>Email: j_soon@gmail.com</b></h5>
-				  <h5><b>Message</b></h5>
-				  <p>
-				  Duis autem vel eum iriure dolor in hendrerit in vulputate 
-				  velit esse molestie consequat, vel illum dolore eu feugiat 
-				  nulla facilisis at vero eros et accumsan et iusto odio 
-				  dignissim qui blandit praesent luptatum zzril delenit augue 
-				  duis dolore te feugait nulla facilisi.
-				  </p>
-				  
-				  <h5><b>Reply</b></h5>
-				  <p>
-				  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-				  sed diam nonummy nibh euismod tincidunt ut laoreet 
-				  dolore magna aliquam erat volutpat.
-				  </p>
-				  
-				  <br />
-				  <hr>
-				  <br />
-				  <h5><b>Name: Yen Racuya</b></h5>
-				  <h5><b>Email: yenhaha@gmail.com</b></h5>
-				  <h5><b>Message</b></h5>
-				  <p>
-				  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-				  sed diam nonummy nibh euismod tincidunt ut laoreet 
-				  dolore magna aliquam erat volutpat. Ut wisi enim ad 
-				  minim veniam, quis nostrud exerci tation ullamcorper 
-				  suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-				  
-				  </p>
-				  
-				  <h5><b>Reply</b></h5>
-				  <p>
-				  Facilisis at vero eros et accumsan et iusto odio 
-				  dignissim qui blandit praesent luptatum zzril delenit augue 
-				  duis dolore te feugait nulla facilisi.
-				  </p>
-				  
-				  <hr>
-				</div>
-			  </form>
+			   <h3 class = "pull-left">ANSWERED MESSAGES</h3>
+         <br /><br /><br /><br />
+          <?php foreach($getbrokermsgs as $m): ?>
+            Name: <?php echo htmlentities($m['sender']); ?><br>
+            Email: <?php echo htmlentities($m['senderemail']); ?><br>
+            <small><?php echo htmlentities($m['timestamp']); ?></small><br>
+            Message: <?php echo htmlentities($m['message']); ?><br>
+            <hr><br>
+          <?php endforeach; ?>	
 		</div>
 	</body>
 </html>

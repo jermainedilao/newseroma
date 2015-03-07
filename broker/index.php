@@ -5,7 +5,10 @@
 	{
 		$page = isset($_GET['p']) ? $_GET['p'] : 'broker';
 		
-		$content = $page.".php";
+		$id = $_SESSION['userid'];
+    $countnewmsg = count_new_msg($id);
+    
+    $content = $page.".php";
 		
 		if(isset($_GET['l']))
 		{
@@ -149,7 +152,11 @@
 					font-style: italic;
 			    }
 		    }
-		  
+		
+    .container{
+        margin-bottom: 100px; 
+    }
+    
 		.btn{
 			background-color: #AB3334;
 			border-color: #AB3334;
@@ -160,7 +167,15 @@
 			background-color: #DDA185;
 			border-color: #DDA185;
 		}
-		  
+		 
+    .footer{
+        background-color: #AB3334;
+        color: #fff;
+        text-align: center;
+        height: 70px;
+        vertical-align: middle;
+        line-height: 70px;    
+    }
 		  <!--for responsive  header text-->
       
 		</style>
@@ -184,7 +199,7 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">	
 						  <li><a href = "?p=broker">Broker Profile</a></li>
-						  <li><a href = "?p=brokermsg">Messages&nbsp;<span class = "badge">2</span></a></li>
+						  <li><a href = "?p=brokermsg">Messages&nbsp;<?php if($countnewmsg != false){ ?><span class = "badge"><?php echo htmlentities($countnewmsg);?></span> <?php } ?> </a></li>
 						  <li><a href = "?p=brokeransmsg">Answered Messages</a></li>
 						  <li><a href = "?p=updbroker">Update Profile</a></li>
 						  <li><a href = "?l=true">Log Out</a></li>
@@ -200,6 +215,11 @@
 				<?php include_once($content); ?>
 			</div>
 		</div>
+    
+    <div class="footer">
+        &copy; Seroma Residences, 2015
+     </div>
+    
 		<script src="../bootstrap/js/jquery.min.js"></script>
 		<script src="../bootstrap/js/bootstrap.min.js"></script>
 	</body>

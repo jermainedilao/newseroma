@@ -36,7 +36,7 @@
 <html>
 	<head><title>Update Broker</title></head>
 	<body>
-		<h4>UPDATE PROFILE</h4><br/>
+		<h4>UPDATE PROFILE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post" enctype="multipart/form-data">
 					<div class = "form-group">

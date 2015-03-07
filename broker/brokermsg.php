@@ -1,72 +1,40 @@
+<?php
+	$viewbrokerprofile = view_broker_profile($_SESSION['userid']);
+  $id = $_SESSION['userid'];
+  set_msg($id);
+  $getbrokermsgs = get_broker_msgs($id);
+  $countnewmsg = count_new_msg($id);
+?>
+
 <!DOCTYPE html>
 <head><title>Messages</title></head>
 <html>
 	<body>
+    <h4>BROKER PROFILE</h4><hr/>
 		<div class = "col-md-3">
-					<br>
-					<p>
-						<h4>Broker / Agent</h4>
-			<br />
-						<h5><b>Name:</b></h5>
-						John Doe
-			<br /><br />
-			<h5><b>Email:</b></h5>
-			johndoeBroker@asd.com
-					</p>
-	
+				<div>
+					<h5><b>Name:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['name']);?>
+				</div><br/>
+				<div>
+					<h5><b>Email:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['email']);?>
+				</div><br/>
+				<div>
+					<h5><b>Contact:</b></h5>
+					<?php echo htmlentities($viewbrokerprofile['contact']);?>
+				</div>
 		</div>
 		<div class = "col-md-8">
 			 <h3 class = "pull-left">MESSAGES</h3>
-			  <br /><br /><br /><br />
-			  <form class = "form">
-				<div class = "form-group">
-				  <h5><b>Name: Percy Jackson</b></h5>
-				  <h5><b>Email: pjo@gmail.com</b></h5>
-				  <h5><b>Message</b></h5>
-				  <p>
-				  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-				  sed diam nonummy nibh euismod tincidunt ut laoreet 
-				  dolore magna aliquam erat volutpat. Ut wisi enim ad 
-				  minim veniam, quis nostrud exerci tation ullamcorper 
-				  suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-				  Duis autem vel eum iriure dolor in hendrerit in vulputate 
-				  velit esse molestie consequat, vel illum dolore eu feugiat 
-				  nulla facilisis at vero eros et accumsan et iusto odio 
-				  dignissim qui blandit praesent luptatum zzril delenit augue 
-				  duis dolore te feugait nulla facilisi.
-				  </p>
-				  
-				  <textarea class="form-control" cols="60" rows="5" placeholder="Reply" ></textarea>
-				  <br />
-				  <div class = "form-group">
-					<button type = "submit" class = "btn">Send</button>
-				  </div>
-				  
-				  <br />
-				  <hr>
-				  <br />
-				  
-				  <h5><b>Name: Mamay Tan</b></h5>
-				  <h5><b>Email: may_tan@gmail.com</b></h5>
-				  <h5><b>Message</b></h5>
-				  <p>
-				  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-				  sed diam nonummy nibh euismod tincidunt ut laoreet 
-				  dolore magna aliquam erat volutpat. Ut wisi enim ad 
-				  minim veniam, quis nostrud exerci tation ullamcorper 
-				  suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-				  
-				  </p>
-				  
-				  <textarea class="form-control" cols="60" rows="5" placeholder="Reply" ></textarea>
-				  <br />
-				  <div class = "form-group">
-					<button type = "submit" class = "btn">Send</button>
-				  </div>
-				  
-				  <hr>
-				</div>
-			  </form>
+				<br /><br /><br /><br />
+          <?php foreach($getbrokermsgs as $m): ?>
+            Name: <?php echo htmlentities($m['sender']); ?><br>
+            Email: <?php echo htmlentities($m['senderemail']); ?><br>
+            <small><?php echo htmlentities($m['timestamp']); ?></small><br>
+            Message: <?php echo htmlentities($m['message']); ?><br>
+            <hr><br>
+          <?php endforeach; ?>	
 		</div>
 	</body>
 </html>
