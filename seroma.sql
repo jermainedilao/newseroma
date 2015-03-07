@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2015 at 04:25 PM
+-- Generation Time: Mar 07, 2015 at 09:47 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.3
 
@@ -141,25 +141,30 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `recipient` smallint(6) NOT NULL,
   `message` varchar(500) NOT NULL,
   `viewed` int(11) NOT NULL,
+  `reply` varchar(500) NOT NULL,
   `messagestatus` smallint(6) NOT NULL,
   PRIMARY KEY (`messageid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `messages`
 --
 
-INSERT INTO `messages` (`messageid`, `sender`, `senderemail`, `recipient`, `message`, `viewed`, `messagestatus`) VALUES
-(1, 'Rosie', 'rosie@rosie.com', 2, 'SONLAOSKI FOREVERMORE!!!!! <333333 :)', 0, 1),
-(2, 'Rosie', 'rosie@rosie.com', 2, 'bleh :p', 0, 1),
-(3, 'Rosie', 'rosie@rosie.com', 2, 'bwahahaha', 0, 1),
-(4, 'Rosie', 'rosie@rosie.com', 2, 'bwahahaha', 0, 1),
-(5, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, 1),
-(6, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, 1),
-(7, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, 1),
-(8, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, 1),
-(9, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, 1),
-(10, 'Yen', 'yen@yen.com', 1, 'jar of hearts', 0, 1);
+INSERT INTO `messages` (`messageid`, `sender`, `senderemail`, `recipient`, `message`, `viewed`, `reply`, `messagestatus`) VALUES
+(1, 'Rosie', 'rosie@rosie.com', 2, 'SONLAOSKI FOREVERMORE!!!!! <333333 :)', 0, '', 1),
+(2, 'Rosie', 'rosie@rosie.com', 2, 'bleh :p', 0, '', 1),
+(3, 'Rosie', 'rosie@rosie.com', 2, 'bwahahaha', 0, '', 1),
+(4, 'Rosie', 'rosie@rosie.com', 2, 'bwahahaha', 0, '', 1),
+(5, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, '', 1),
+(6, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, '', 1),
+(7, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, '', 1),
+(8, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, '', 1),
+(9, 'Rosie', 'rosie@rosie.com', 2, 'sonlao', 0, '', 1),
+(10, 'Yen', 'yen@yen.com', 1, 'jar of hearts', 0, '', 1),
+(11, 'Jerrah Marie R. Son', 'zhanruishijm@gmail.com', 2, 'hiiiiiiiiii~', 0, '', 1),
+(12, 'yen', 'yen@yen.com', 3, 'i love kvein <3', 1, '', 1),
+(13, 'Rosie', 'mrosetan@gmail.com', 3, 'I love John Tolentino and Kvein Aballe <3', 1, '', 1),
+(14, 'Rosie', 'mrosetan@gmail.com', 3, 'And I love you too <3', 1, '', 1);
 
 -- --------------------------------------------------------
 
