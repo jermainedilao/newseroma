@@ -15,9 +15,9 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>delamenities.php</title>
+	<head><title>Delete Amenities</title>
 	<body>
-		<h4>DELETE AMENITIES</h4>
+		<h4>DELETE AMENITIES</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">

@@ -12,7 +12,7 @@
 <html>
 	<head><title>Delete Article</title>
 	<body>
-		<h4>DELETE ARTICLE</h4>
+		<h4>DELETE ARTICLE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post">
 					<div class = "form-group">

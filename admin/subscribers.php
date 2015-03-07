@@ -5,8 +5,8 @@
 <html>
 	<head><title>View Subscribers</title></head>
 	<body>
-		<h4>Subscribers</h4>
-		<div class = "col-md-8" style="height:300px;overflow:auto;">
+		<h4>Subscribers</h4><hr/>
+		<div class = "col-md-12" style="height:300px;overflow:auto;">
 			<table class = "table table-hover">
 				<thead>
 					<tr>

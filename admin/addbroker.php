@@ -32,7 +32,7 @@
 <html>
 	<head><title>Add Broker</title>
 	<body>
-		<h4>ADD BROKER</h4>
+		<h4>ADD BROKER</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="post" enctype="multipart/form-data">
 					<div class = "form-group">

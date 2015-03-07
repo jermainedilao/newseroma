@@ -14,10 +14,9 @@
  ?>
 <!DOCTYPE html>
 <html>
-	<head><title>updamenities.php</title>
+	<head><title>Update Amenities</title>
 	<body>
-		<br>
-		<h4>UPDATE AMENITIES</h4>
+		<h4>UPDATE AMENITIES</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "POST">
 					<div class = "form-group">

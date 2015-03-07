@@ -61,7 +61,7 @@
 <html>
 	<head><title>Update Article</title></head>
 	<body>
-		<h4>UPDATE ARTICLE</h4>
+		<h4>UPDATE ARTICLE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post" enctype="multipart/form-data">
 					<div class = "form-group">

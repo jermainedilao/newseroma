@@ -13,7 +13,7 @@
 <html>
 	<head><title>Delete Units</title>
 	<body>
-		<h4>DELETE UNIT</h4>
+		<h4>DELETE UNIT</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post">
 					<div class = "form-group">

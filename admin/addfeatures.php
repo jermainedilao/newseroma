@@ -11,7 +11,7 @@
 <html>
 	<head><title>addfeatures.php</title>
 	<body>
-		<h4>ADD FEATURES</h4>
+		<h4>ADD FEATURES</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">

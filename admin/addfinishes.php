@@ -10,7 +10,7 @@
 <html>
 	<head><title>Add Finishes</title>
 	<body>
-		<h4>ADD FINISHES</h4>
+		<h4>ADD FINISHES</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post">
 					<div class = "form-group">

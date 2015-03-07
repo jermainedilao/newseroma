@@ -44,7 +44,7 @@
 <html>
 	<head><title>addunits.php</title>
 	<body>
-		<h4>ADD UNIT</h4>
+		<h4>ADD UNIT</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post" enctype = "multipart/form-data">
 					<div class = "form-group">

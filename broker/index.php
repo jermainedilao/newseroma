@@ -6,9 +6,9 @@
 		$page = isset($_GET['p']) ? $_GET['p'] : 'broker';
 		
 		$id = $_SESSION['userid'];
-    $countnewmsg = count_new_msg($id);
+		$countnewmsg = count_new_msg($id);
     
-    $content = $page.".php";
+		$content = $page.".php";
 		
 		if(isset($_GET['l']))
 		{

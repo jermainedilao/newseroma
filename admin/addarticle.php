@@ -37,7 +37,7 @@
 <html>
 	<head><title>Add Article</title>
 	<body>
-		<h4>ADD ARTICLE</h4>
+		<h4>ADD ARTICLE</h4><hr/>
 			<div class = "col-md-3">
 				<form method="post" enctype="multipart/form-data">
 					<div class = "form-group">

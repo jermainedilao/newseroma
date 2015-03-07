@@ -5,6 +5,9 @@
 	{
 		$page = isset($_GET['p']) ? $_GET['p'] : 'addarticle';
 		
+		$id = $_SESSION['userid'];
+		$countnewmsg = count_new_msg($id);
+		
 		$content = $page.".php";
 		
 		if(isset($_GET['l']))
@@ -152,7 +155,10 @@
 								</ul>
 							</li>
 							<li>
-								<a href = "?p=msgs">Messages&nbsp;<span class = "badge">5</span></a>
+								<a href = "?p=adminmsg">Messages&nbsp;<?php if($countnewmsg != false){ ?><span class = "badge"><?php echo htmlentities($countnewmsg);?></span> <?php } ?> </a>
+							</li>
+							<li>
+								<a href = "?p=adminansmsg">Answered Messages</a>
 							</li>
 							<li>
 								<a href = "?p=subscribers">Subscribers</a>
