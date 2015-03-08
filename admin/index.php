@@ -52,11 +52,11 @@
 			}
 			
 			.color1{
-				color: white;
+				color: #fff;
 			}
 			
 			.color2{
-				color: pink;
+				color: #FDD3C9;
 			}
 			
 			.header span.color1{

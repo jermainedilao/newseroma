@@ -42,11 +42,11 @@
 			}
 			
 			.color1{
-				color: white;
+				color: #fff;
 			}
 			
 			.color2{
-				color: pink;
+				color: #FDD3C9;
 			}
 			
 			.header span.color1{
@@ -121,21 +121,21 @@
       
       @media all and (max-width: 390px ) {
         .header span.color1{
-          font-size: 1.5em;
+          font-size: 1em;
             position: absolute;
             bottom: 50px;
             left: 20px;
         }
         
         .header span.color2{
-          font-size: 1.5em;
+          font-size: 1em;
             position: absolute;
             bottom: 50px;
             left: 110px;
         }
         
         .header span.lowerheader{
-          font-size: 1.5em;
+          font-size: 0.5em;
           position: absolute;
           bottom: 25px;
           left: 20px;

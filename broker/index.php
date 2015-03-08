@@ -49,12 +49,12 @@
 			}
 			
 			.color1{
-				color: white;
+				color: #fff;
         
 			}
 			
 			.color2{
-				color: pink;
+				color: #FDD3C9;
 			}
 			
 			.header span.color1{
@@ -105,76 +105,28 @@
       
       @media all and (max-width: 390px ) {
         .header span.color1{
-          font-size: 1.5em;
+          font-size: 1em;
             position: absolute;
             bottom: 50px;
             left: 20px;
         }
         
         .header span.color2{
-          font-size: 1.5em;
+          font-size: 1em;
             position: absolute;
             bottom: 50px;
             left: 110px;
         }
         
         .header span.lowerheader{
-          font-size: 1.5em;
+          font-size: 0.5em;
           position: absolute;
           bottom: 25px;
           left: 20px;
           font-style: italic;
         }
       }
-		  
-		  <!--for responsive  header text-->
-		  @media all and (max-width: 1000px) { /* screen size until 1000px */
-				  
-			  .header span.color1{
-				font-size: 2.5em;
-				position: absolute;
-				bottom: 50px;
-				left: 40px;
-			  }
-			  
-			  .header span.color2{
-				font-size: 2.5em;
-				position: absolute;
-				bottom: 50px;
-				left: 210px;
-			  }
-		  
-			  .header span.lowerheader{
-				font-size: 2em;
-				position: absolute;
-				bottom: 25px;
-				left: 60px;
-				font-style: italic;
-			  }
-		  }
-		  @media all and (max-width: 500px) { /* screen size until 500px */
-			    .header span.color1{
-					font-size: 2em;
-					position: absolute;
-					bottom: 50px;
-					left: 40px;
-				}
-				  
-				.header span.color2{
-					font-size: 2em;
-					position: absolute;
-					bottom: 50px;
-					left: 160px;
-				}
-		  
-				.header span.lowerheader{
-					font-size: 1.5em;
-					position: absolute;
-					bottom: 25px;
-					left: 40px;
-					font-style: italic;
-			    }
-		    }
+		 
 		
     .container{
         margin-bottom: 100px; 
@@ -199,7 +151,6 @@
         vertical-align: middle;
         line-height: 70px;    
     }
-		  <!--for responsive  header text-->
       
 		</style>
 	</head>

@@ -28,11 +28,11 @@
 		    <h3 class = "pull-left">ANSWERED MESSAGES</h3>
 			<br /><br /><br /><br />
 			<?php foreach($getbrokerrepliedmsgs as $m): ?>
-				<b>Name:</b> <?php echo htmlentities($m['sender']); ?><br>
-				<b>Email:</b> <?php echo htmlentities($m['senderemail']); ?><br>
-				<small><?php echo htmlentities($m['timestamp']); ?></small><br>
-				<b>Message:</b> <?php echo htmlentities($m['message']); ?><br>
-				<b>Reply:</b> <?php echo htmlentities($m['reply']); ?><br>
+				<b>Name:</b> <?php echo htmlentities($m['sender']); ?><br><br>
+				<b>Email:</b> <?php echo htmlentities($m['senderemail']); ?><br><br>
+				<small><em><b>Received: </b><?php echo htmlentities($m['timestamp']); ?></em></small><br><br>
+				<b>Message:</b><br><br> <?php echo htmlentities($m['message']); ?><br><br>
+				<b>Reply:</b> <br><br><?php echo htmlentities($m['reply']); ?><br>
 				<hr><br>
 			<?php endforeach; ?>	
 		</div>

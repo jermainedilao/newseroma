@@ -39,10 +39,10 @@
 		 <h3 class = "pull-left">MESSAGES</h3>
 		 <br /><br /><br /><br />
 		  <?php foreach($getbrokermsgs as $m): ?>
-			<b>Name: </b><?php echo htmlentities($m['sender']); ?><br>
-			<b>Email: </b><?php echo htmlentities($m['senderemail']); ?><br>
-			<small><?php echo htmlentities($m['timestamp']); ?></small><br>
-			<b>Message:</b> <?php echo htmlentities($m['message']); ?><br/><br/>
+			<b>Name: </b><?php echo htmlentities($m['sender']); ?><br><br>
+			<b>Email: </b><?php echo htmlentities($m['senderemail']); ?><br><br>
+			<small><em><b>Received: </b><?php echo htmlentities($m['timestamp']); ?></em></small><br><br>
+			<b>Message:</b><br> <?php echo htmlentities($m['message']); ?><br/><br/>
 			<form method = "post">
 				<div class = "form-group">
 					<textarea name = "messagereply" rows = "4"  class ="form-control" required = "required"></textarea>

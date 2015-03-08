@@ -64,6 +64,7 @@
 								<option value = "<?php echo htmlentities($d['id']); ?>"><?php echo htmlentities($d['name']); ?></option>
 							<?php endforeach; ?>
 						</select>
+          <br>
 					<label>Message</label><br>
 					<textarea class="form-control" name = "message" cols="60" rows="5" required="required"></textarea><br>
 					<button type = "submit" name="send" class = "btn">Send</button>
