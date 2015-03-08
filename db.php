@@ -677,7 +677,7 @@
   function get_active_users()
 	{
 		$db = site_db();
-		$sql = "select * from users where status=?";
+		$sql = "select * from users where status=? order by name asc";
 		$st = $db->prepare($sql);
 		$st->execute(array(1));
 		$rows = $st->fetchAll();
@@ -716,6 +716,30 @@
 		
 		return $rows;
    }
+   
+    function get_all_msgs()
+	{
+		$db = site_db();
+		$sql = "select * from messages order by timestamp desc";
+		$st = $db->prepare($sql);
+		$st->execute();
+		$rows = $st->fetchAll();
+		$db = null;
+		
+		return $rows;
+    }
+   
+   	function all_msgs_get_broker($id)
+	{
+		$db = site_db();
+		$sql = "select * from users where id = ?";
+		$st = $db->prepare($sql);
+		$st->execute(array($id));
+		$row = $st->fetch();
+		$db = null;
+		
+		return $row;
+	}
 
    function count_new_msg($userid){
    

@@ -22,7 +22,6 @@
 		if ($brokerusername == '' and $brokerpassword == '' and $brokername == '' and $brokercontact == '' and $brokeremail == '' and $brokerstatus == '')
 		{
 			echo '<code>Update Atleast A Field</code>';
-			header("Refresh:1");
 		}
 		else
 		{

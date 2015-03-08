@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2015 at 01:15 AM
+-- Generation Time: Mar 08, 2015 at 03:11 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -32,19 +32,6 @@ CREATE TABLE IF NOT EXISTS `amenities` (
   `amenitystatus` int(11) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
---
--- Dumping data for table `amenities`
---
-
-INSERT INTO `amenities` (`amenityid`, `amenityname`, `amenitystatus`) VALUES
-(1, 'Uptown Funk Hall', 0),
-(2, ' Multipurpose function hall /business center', 1),
-(3, ' Poolside lounge w/bar', 1),
-(4, ' Amphitheater', 1),
-(5, 'Fitness gym', 1),
-(6, 'Multipurpose function hall /business center', 1),
-(7, 'Knorr Cubes', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -60,18 +47,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `articleimgtype` varchar(255) NOT NULL,
   `articleimgurl` varchar(255) NOT NULL,
   `articlestatus` smallint(1) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-
---
--- Dumping data for table `articles`
---
-
-INSERT INTO `articles` (`articleid`, `articletitle`, `articlebody`, `articledate`, `articleimgname`, `articleimgtype`, `articleimgurl`, `articlestatus`) VALUES
-(2, 'First Article', 'This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. ', '2015-03-05 16:52:20', 'image1.jpg', 'image/jpeg', 'articleimages/image1.jpg', 1),
-(3, 'This is my second article. ', 'This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. This is my second article. ', '2015-03-05 16:59:09', 'image2.jpg', 'image/jpeg', 'articleimages/image2.jpg', 1),
-(4, 'This is my third article. ', 'This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. This is my third article. ', '2015-03-05 17:03:50', 'image3.jpg', 'image/jpeg', 'articleimages/image3.jpg', 1),
-(5, 'This is my fourth article that Ill delete later. ', 'This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. This is my fourth article that Ill delete later. ', '2015-03-07 22:06:07', 'pic1.jpg', 'image/jpeg', 'articleimages/pic1.jpg', 1),
-(6, 'This is my fifth Article. ', 'This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. This is my fifth Article. ', '2015-03-07 22:09:48', 'spectrum_of_the_sky_hdtv_1080p-HD1.jpg', 'image/jpeg', 'articleimages/spectrum_of_the_sky_hdtv_1080p-HD1.jpg', 1);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 -- --------------------------------------------------------
 
@@ -85,19 +61,6 @@ CREATE TABLE IF NOT EXISTS `features` (
   `featurestatus` smallint(6) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
---
--- Dumping data for table `features`
---
-
-INSERT INTO `features` (`featureid`, `featurename`, `featurestatus`) VALUES
-(1, 'Reception / Lobby area', 1),
-(2, 'Heat and smoke detectors with sprinkler system', 1),
-(3, ' CCTV (lobby, elevator and elevator lobby, hallways)', 1),
-(4, '110% Standby power', 0),
-(5, ' Telephone & cable tv outlets', 1),
-(6, 'Fire alarm and fire hose cabinets along corridors', 1),
-(7, 'Umami', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -109,18 +72,6 @@ CREATE TABLE IF NOT EXISTS `finishes` (
   `finishesname` varchar(255) NOT NULL,
   `finishesstatus` smallint(1) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-
---
--- Dumping data for table `finishes`
---
-
-INSERT INTO `finishes` (`finishesid`, `finishesname`, `finishesstatus`) VALUES
-(1, 'diamond counter top', 1),
-(2, 'cebu king bed', 0),
-(3, 'carpet', 1),
-(4, 'Jacuzzi', 1),
-(5, 'Centralized Aircon', 1),
-(6, 'Bulalo', 1);
 
 -- --------------------------------------------------------
 
@@ -139,25 +90,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `reply` varchar(500) NOT NULL,
   `replytimestamp` varchar(50) NOT NULL,
   `messagestatus` smallint(6) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
-
---
--- Dumping data for table `messages`
---
-
-INSERT INTO `messages` (`messageid`, `sender`, `senderemail`, `timestamp`, `recipient`, `message`, `viewed`, `reply`, `replytimestamp`, `messagestatus`) VALUES
-(2, 'Rosie', 'rosie@rosie.com', '2015-03-08 00:01:53', 2, 'bleh :p', 1, 'Who you!? ', 'March 8, 2015, 1:01 am', 1),
-(13, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:01:28', 3, 'I love John Tolentino and Kvein Aballe <3', 1, 'Yuck! Three timer!', 'March 8, 2015, 1:01 am', 1),
-(14, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:01:21', 3, 'And I love you too <3', 1, 'Shup Rosie! You''re so kadiri! You''re already inlove with kvein!!!! Two-timer!', 'March 8, 2015, 1:01 am', 1),
-(16, 'Kim Chiu', 'kimchiu@gmail.com', '2015-03-07 23:47:25', 2, 'I really like you! And I think I love you na! <3 Can we meet each other please??? <3.<3', 1, 'Okay.. Let''s meet at starbucks, but sorry in advance.. Im already taken ,</3', 'March 8, 2015, 12:47 am', 1),
-(17, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:08:18', 3, 'And I love you too <3', 1, 'Kaluod oist!!!!', 'March 8, 2015, 1:08 am', 1),
-(18, 'Janella Salvador', 'iamsuperjanella@gmail.com', '2015-03-07 23:52:49', 2, 'Hi, I like you too. And I think I love you na! <3', 1, 'Im sorry. Im already taken.. </3', 'March 8, 2015, 12:52 am', 1),
-(19, 'Kim Chiu again...', 'kimchiu@gmail.com', '2015-03-07 23:59:16', 2, 'Talaga?? Break nlng kayo please? :( Tayo nlang? :(', 1, 'Ano ka ba... Lumayo ka sa akin. Ang landi mo p*ta ka! Kadiri mo kim chiu!', 'March 8, 2015, 12:59 am', 1),
-(20, 'Kim Chiu again and again', 'kimchiu@gmail.com', '2015-03-08 00:00:44', 2, 'Huhuhuhuhhuhuhu :(( Ill find another YOU nlang :(( huhu </3', 1, 'Okay... Go to BDO. They will find ways.... :) Smile ka lang. Okay lang. Mdami pang gwapo na kagaya ko jan :D', 'March 8, 2015, 1:00 am', 1),
-(21, 'Heubert Ferolino', 'ferlintrev@icloud.com', '2015-03-08 00:09:38', 3, 'Gigaon man ka oist! Mura man kag Gigahertz!', 1, '', '', 0),
-(22, 'Jigger Ababon', 'jiggelets@gmail.com', '2015-03-08 00:10:25', 3, 'Jigaon bya oist!', 0, '', '', 0),
-(23, 'Crown Regency', 'crownregency@gmail.com', '2015-03-08 00:14:08', 1, 'Hi! Goodmorning. We would like to buy your site :) how much? PM me...', 1, '50 million dollars. Because you''re not rich enough. You okay with that?', 'March 8, 2015, 1:14 am', 1),
-(24, 'Radisson Blu', 'radissonblu@gmail.com', '2015-03-08 00:13:49', 1, 'Hi! Goodmorning :) We would like to buy your site :) How much? PM me....', 1, '100 million dollars.. You okay with that?', 'March 8, 2015, 1:13 am', 1);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 -- --------------------------------------------------------
 
@@ -207,17 +140,6 @@ CREATE TABLE IF NOT EXISTS `units` (
   `unitfinishes5` int(11) NOT NULL,
   `unitstatus` smallint(1) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
-
---
--- Dumping data for table `units`
---
-
-INSERT INTO `units` (`unitid`, `unitname`, `unittype`, `unitarea`, `unitimgname`, `unitimgtype`, `unitimgurl`, `unitfinishes1`, `unitfinishes2`, `unitfinishes3`, `unitfinishes4`, `unitfinishes5`, `unitstatus`) VALUES
-(4, 'Papaya', 'Studio Unit', '100 sq.ft', '1484678_10203036505147982_2580492930484556424_n.jpg', 'image/jpeg', 'unitimages/1484678_10203036505147982_2580492930484556424_n.jpg', 1, 2, 3, 4, 5, 1),
-(5, 'Bayabas', 'One-Bedroom Unit', '200 sq.ft', '11034304_10203036505267985_8887466405525499903_n.jpg', 'image/jpeg', 'unitimages/11034304_10203036505267985_8887466405525499903_n.jpg', 1, 2, 3, 5, 0, 1),
-(6, 'Apol', 'One-Bedroom Unit', '200 sq.ft', '11034304_10203036505267985_8887466405525499903_n.jpg', 'image/jpeg', 'unitimages/11034304_10203036505267985_8887466405525499903_n.jpg', 1, 2, 5, 0, 0, 1),
-(7, 'Santol', 'Studio Unit', '100 sq.ft', '1484678_10203036505147982_2580492930484556424_n.jpg', 'image/jpeg', 'unitimages/1484678_10203036505147982_2580492930484556424_n.jpg', 1, 0, 0, 0, 0, 1),
-(8, 'Rosie', 'Presidential Suite', '1000 sq. ft.', '11034304_10203036505267985_8887466405525499903_n.jpg', 'image/jpeg', 'unitimages/11034304_10203036505267985_8887466405525499903_n.jpg', 1, 0, 6, 5, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -309,7 +231,7 @@ MODIFY `amenityid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-MODIFY `articleid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `articleid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `features`
 --
@@ -324,7 +246,7 @@ MODIFY `finishesid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-MODIFY `messageid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+MODIFY `messageid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `subscriptions`
 --

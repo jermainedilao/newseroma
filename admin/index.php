@@ -210,6 +210,9 @@
 								<a href = "?p=adminansmsg">Answered Messages</a>
 							</li>
 							<li>
+								<a href = "?p=adminallmsg">All Messages</a>
+							</li>
+							<li>
 								<a href = "?p=subscribers">Subscribers</a>
 							</li>
 							<li>
