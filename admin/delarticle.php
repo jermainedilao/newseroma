@@ -29,5 +29,6 @@
 					</div>
 				</form>
 			</div>
+      <div class="fordeletemodule"></div>
 	</body>
 </html>

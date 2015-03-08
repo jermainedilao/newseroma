@@ -29,10 +29,11 @@
 	<link rel="shortcut icon" href="../seroma.favicon" />	
 		<style>
 			.header{
-				background: url("../images/headerbg.jpg");
-				background-size: 1140px 250px;
+				background-image: url("../images/headerbg.jpg");
+				background-size: cover;
 				background-repeat: no-repeat;
-				margin-top: -20px;
+				margin-top: -10px;
+				margin-bottom: auto;
 				height: 250px;
 			}
 			
@@ -144,14 +145,34 @@
 		}
 		 
     .footer{
-        background-color: #AB3334;
+				background-color: #AB3334;
         color: #fff;
         text-align: center;
         height: 70px;
         vertical-align: middle;
-        line-height: 70px;    
-        margin-top: 130px;
-    }
+        line-height: 70px;  
+        bottom: inherit;
+        width: 100%;
+			}
+      
+      .fordeletemodule{
+        height: 250px;
+      }
+      
+      @media all and (max-height: 600px )  {
+        .footer{
+          background-color: #AB3334;
+          color: #fff;
+          text-align: center;
+          height: 70px;
+          vertical-align: middle;
+          line-height: 70px;  
+          width: 100%;
+          margin-top: 70px;
+          bottom: inherit;
+        }
+          
+      }
       
 		</style>
 	</head>

@@ -54,5 +54,6 @@
 			<hr><br>
 		  <?php endforeach; ?>	
 		</div>
+    <div class="fordeletemodule"></div>
 	</body>
 </html>
