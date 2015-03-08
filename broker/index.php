@@ -150,6 +150,7 @@
         height: 70px;
         vertical-align: middle;
         line-height: 70px;    
+        margin-top: 130px;
     }
       
 		</style>
