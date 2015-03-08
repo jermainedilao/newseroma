@@ -103,6 +103,54 @@
 				vertical-align: middle;
 				line-height: 70px;
 			}
+      
+      @media all and (max-width: 700px )  {
+        .header span.color1{
+          font-size: 2em;
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+        }
+        
+        .header span.color2{
+          font-size: 2em;
+            position: absolute;
+            bottom: 50px;
+            left: 130px;
+        }
+        
+        .header span.lowerheader{
+          font-size: 1.5em;
+          position: absolute;
+          bottom: 25px;
+          left: 10px;
+          font-style: italic;
+        }
+      }
+      
+      @media all and (max-width: 390px ) {
+        .header span.color1{
+          font-size: 1.5em;
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+        }
+        
+        .header span.color2{
+          font-size: 1.5em;
+            position: absolute;
+            bottom: 50px;
+            left: 110px;
+        }
+        
+        .header span.lowerheader{
+          font-size: 1.5em;
+          position: absolute;
+          bottom: 25px;
+          left: 20px;
+          font-style: italic;
+        }
+      }
 		</style>
 	</head>
 	<body>
