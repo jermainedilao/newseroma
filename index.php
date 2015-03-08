@@ -131,11 +131,11 @@
           font-size: 1em;
             position: absolute;
             bottom: 50px;
-            left: 90px;
+            left: 80px;
         }
         
         .header span.lowerheader{
-          font-size: 0.5em;
+          font-size: 0.7em;
           position: absolute;
           bottom: 25px;
           left: 20px;
