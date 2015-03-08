@@ -57,9 +57,9 @@
 						<div id="banner-fade">
 							<!-- start Basic Jquery Slider -->
 							<ul class="bjqs">
-								<li><img src="gallery_files/img/1.jpg"></li>
-								<li><img src="gallery_files/img/2.jpg"></li>
-								<li><img src="gallery_files/img/3.jpg"></li>
+								<li><img src="gallery_files/img/1.jpg" title = "Experience the clean and green environment."></li>
+								<li><img src="gallery_files/img/2.jpg" title = "Experience the Seroma feeling."></li>
+								<li><img src="gallery_files/img/3.jpg" title = "Unique and grand."></li>
 								<li><img src="gallery_files/img/4.jpg"></li>
 								<li><img src="gallery_files/img/5.jpg"></li>
 								<li><img src="gallery_files/img/6.jpg"></li>
