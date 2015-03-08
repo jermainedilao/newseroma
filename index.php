@@ -17,9 +17,6 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 		<link rel="shortcut icon" href="seroma.favicon" />
 		<style>
-		    body{
-				height:100%;
-			}
 			.header{
 				background-image: url("images/headerbg.jpg");
 				background-size: cover;
@@ -87,12 +84,33 @@
 		  }
       
       .footer{
-        background-color: #AB3334;
+				background-color: #AB3334;
         color: #fff;
         text-align: center;
         height: 70px;
         vertical-align: middle;
-        line-height: 70px;    
+        line-height: 70px;  
+        bottom: inherit;
+        width: 100%;
+			}
+      
+      .fordeletemodule{
+        height: 250px;
+      }
+      
+      @media all and (max-height: 600px )  {
+        .footer{
+          background-color: #AB3334;
+          color: #fff;
+          text-align: center;
+          height: 70px;
+          vertical-align: middle;
+          line-height: 70px;  
+          width: 100%;
+          margin-top: 70px;
+          bottom: inherit;
+        }
+          
       }
       
       @media all and (max-width: 700px )  {

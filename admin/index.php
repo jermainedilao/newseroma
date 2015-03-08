@@ -31,11 +31,13 @@
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
 	<link rel="shortcut icon" href="../seroma.favicon" />		
 		<style>
+      
 			.header{
 				background-image: url("../images/headerbg.jpg");
-			    background-size: 1140px 250px;
+				background-size: cover;
 				background-repeat: no-repeat;
-				margin-top: -20px;
+				margin-top: -10px;
+				margin-bottom: auto;
 				height: 250px;
 			}
 			
@@ -80,6 +82,7 @@
 			    left: 150px;
 				font-style: italic;
 			}
+      
 			.container{
 				margin-bottom: 100px; 
 			}
@@ -97,12 +100,36 @@
 				 
 			.footer{
 				background-color: #AB3334;
-				color: #fff;
-				text-align: center;
-				height: 70px;
-				vertical-align: middle;
-				line-height: 70px;
+        color: #fff;
+        text-align: center;
+        height: 70px;
+        vertical-align: middle;
+        line-height: 70px;  
+        bottom: inherit;
+        width: 100%;
 			}
+      
+      .fordeletemodule{
+        
+        height: 250px;
+      }
+      
+      @media all and (max-height: 600px )  {
+        .footer{
+          background-color: #AB3334;
+          color: #fff;
+          text-align: center;
+          height: 70px;
+          vertical-align: middle;
+          line-height: 70px;  
+          width: 100%;
+          margin-top: 70px;
+          bottom: inherit;
+        }
+          
+      }
+      
+      
       
       @media all and (max-width: 700px )  {
         .header span.color1{
@@ -233,7 +260,7 @@
     
     <div class="footer pull-bottom">
         &copy; Seroma Residences, 2015
-     </div>
+    </div>
     
 		<script src="../bootstrap/js/jquery.min.js"></script>
 		<script src="../bootstrap/js/bootstrap.min.js"></script>
