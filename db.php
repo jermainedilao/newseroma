@@ -716,6 +716,30 @@
 		
 		return $rows;
    }
+   
+    function get_all_msgs()
+	{
+		$db = site_db();
+		$sql = "select * from messages order by timestamp desc";
+		$st = $db->prepare($sql);
+		$st->execute();
+		$rows = $st->fetchAll();
+		$db = null;
+		
+		return $rows;
+    }
+   
+   	function get_broker($id)
+	{
+		$db = site_db();
+		$sql = "select * from users where id = ?";
+		$st = $db->prepare($sql);
+		$st->execute(array($id));
+		$row = $st->fetch();
+		$db = null;
+		
+		return $row;
+	}
 
    function count_new_msg($userid){
    
