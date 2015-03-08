@@ -677,7 +677,7 @@
   function get_active_users()
 	{
 		$db = site_db();
-		$sql = "select * from users where status=?";
+		$sql = "select * from users where status=? order by name asc";
 		$st = $db->prepare($sql);
 		$st->execute(array(1));
 		$rows = $st->fetchAll();
