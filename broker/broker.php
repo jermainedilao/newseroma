@@ -20,5 +20,6 @@
 					<?php echo htmlentities($viewbrokerprofile['contact']);?>
 				</div>
 			</div>
+      <div class="fordeletemodule"></div>
 	</body>
 </html>
