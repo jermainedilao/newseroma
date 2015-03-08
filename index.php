@@ -69,7 +69,7 @@
 			}
       
       .container{
-        margin-bottom: 100px; 
+        margin-bottom: 300px; 
       }
       
 		  .btn{
