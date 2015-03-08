@@ -39,7 +39,7 @@
 				$unitfinishes3 = $_POST['unitfinishes3'];
 				$unitfinishes4 = $_POST['unitfinishes4'];
 				$unitfinishes5 = $_POST['unitfinishes5'];
-				$unitstatus = $_POST['unitstatus'];
+				$unitstatus = isset($_POST['unitstatus']) ? $_POST['unitstatus'] : '';
 
 				update_unit($unitid, $unitname, $unittype, $unitarea, $unitimgname, $unitimgtype, $unitimgurl, $unitfinishes1, $unitfinishes2, $unitfinishes3, $unitfinishes4, $unitfinishes5, $unitstatus);
 				

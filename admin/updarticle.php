@@ -28,7 +28,7 @@
 					$articleid = $_POST['articleid'];
 					$articletitle = $_POST['articletitle'];
 					$articlebody = $_POST['articlebody'];
-					$articlestatus = $_POST['articlestatus'];
+					$articlestatus = isset($_POST['articlestatus']) ? $_POST['articlestatus'] : '';
 					$articleimgname = $photo['name'];
 					$articleimgtype = $photo['type'];
 					$articleimgurl = 'articleimages/'.$photo['name'];

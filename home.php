@@ -90,7 +90,7 @@
 				</div><br />
 				
 				<div id="article-image">
-					<img src="<?php echo htmlentities($a['articleimgurl']); ?>" class = "image-responsive" style = "width: 100%; height: 300px;"/>
+					<img src="<?php echo htmlentities($a['articleimgurl']); ?>" class = "image-responsive" style = "width: 100%;"/>
 				</div><br />
 				
 				<div id="article-description">
