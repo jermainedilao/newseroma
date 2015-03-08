@@ -9,14 +9,14 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>addfeatures.php</title>
+	<head><title>Add Condominium Feature</title>
 	<body>
-		<h4>ADD FEATURES</h4><hr/>
+		<h4>ADD CONDOMINIUM FEATURE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">
-						<label>Description:</label>
-						<textarea class="form-control" name="featurename" rows="3"></textarea>
+						<label>New Condominium Feature:</label>
+						<input type = "text" class="form-control" name="featurename" >
 					</div>
 					<div class = "form-group">
 						<button type = "submit" name="submit" class = "btn">Save</button>

@@ -101,7 +101,7 @@
 					<input type = "text" class = "form-control" name = "unitarea" placeholder = "Unit area here ex(100 sq.ft)..."/>
 				</div>
 				<div class = "form-group">
-					<label>Unit Finishes 1:</label>
+					<label>Unit Finish 1:</label>
 					<select name = "unitfinishes1" class = "form-control">
 						<option value = "" disabled = "disabled" selected = "selected">Please select</option>
 						<?php foreach($getfinishes as $g): ?>
@@ -111,7 +111,7 @@
 					</select>
 				</div>
 				<div class = "form-group">
-					<label>Unit Finishes 2:</label>
+					<label>Unit Finish 2:</label>
 					<select name = "unitfinishes2" class = "form-control">
 						<option value = "" disabled = "disabled" selected = "selected">Please select</option>
 						<?php foreach($getfinishes as $g): ?>
@@ -121,7 +121,7 @@
 					</select>						
 				</div>
 				<div class = "form-group">
-					<label>Unit Finishes 3:</label>
+					<label>Unit Finish 3:</label>
 					<select name = "unitfinishes3" class = "form-control">
 						<option value = "" disabled = "disabled" selected = "selected">Please select</option>
 						<?php foreach($getfinishes as $g): ?>
@@ -131,7 +131,7 @@
 					</select>						
 				</div>
 				<div class = "form-group">
-					<label>Unit Finishes 4:</label>
+					<label>Unit Finish 4:</label>
 					<select name = "unitfinishes4" class = "form-control">
 						<option value = "" disabled = "disabled" selected = "selected">Please select</option>
 						<?php foreach($getfinishes as $g): ?>
@@ -141,7 +141,7 @@
 					</select>						
 				</div>
 				<div class = "form-group">
-					<label>Unit Finishes 5:</label>
+					<label>Unit Finish 5:</label>
 					<select name = "unitfinishes5" class = "form-control">
 						<option value = "" disabled = "disabled" selected = "selected">Please select</option>
 						<?php foreach($getfinishes as $g): ?>

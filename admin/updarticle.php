@@ -65,7 +65,8 @@
 			<div class = "col-md-3">
 				<form class = "form" method = "post" enctype="multipart/form-data">
 					<div class = "form-group">
-					    <select class = "form-control" name = "articleid" required = "required">
+             <label>Article Title</label>
+					   <select class = "form-control" name = "articleid" required = "required">
 							<option value = "" disabled>Please select</option>
 							<?php foreach($updgetarticles as $d): ?>
 								<option value = "<?php echo htmlentities($d['articleid']); ?>"><?php echo htmlentities($d['articletitle']); ?></option>
@@ -73,7 +74,7 @@
 						</select>
 					</div>
 					<div class = "form-group">
-						<label>Title</label>
+						<label>New Article Title</label>
 						<input type = "text" value = "<?php htmlentities($articletitle); ?>" name = "articletitle" class = "form-control" placeholder = "New title here"/>
 					</div>	
 					<div class = "form-group">

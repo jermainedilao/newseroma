@@ -11,7 +11,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head><title>Delete Units</title>
+	<head><title>Delete Unit</title>
 	<body>
 		<h4>DELETE UNIT</h4><hr/>
 			<div class = "col-md-3">

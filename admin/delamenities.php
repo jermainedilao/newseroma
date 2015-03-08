@@ -15,9 +15,9 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>Delete Amenities</title>
+	<head><title>Delete Condominium Amenity</title>
 	<body>
-		<h4>DELETE AMENITIES</h4><hr/>
+		<h4>DELETE CONDOMINIUM AMENITY</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">

@@ -9,14 +9,14 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>addamenities.php</title>
+	<head><title>Add Condominium Amenity</title>
 	<body>
-		<h4>ADD AMENITIES</h4><hr/>
+		<h4>ADD CONDOMINIUM AMENITY</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">
-						<label>Description:</label>
-						<textarea class="form-control" name="amenityname" rows="3"></textarea>
+						<label>New Condominium Amenity:</label>
+						<input type = "text" class="form-control" name="amenityname">
 					</div>
 					<div class = "form-group">
 						<button type = "submit" name="submit" class = "btn">Save</button>

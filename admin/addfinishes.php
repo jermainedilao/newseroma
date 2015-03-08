@@ -8,14 +8,14 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head><title>Add Finishes</title>
+	<head><title>Add Finish</title>
 	<body>
-		<h4>ADD FINISHES</h4><hr/>
+		<h4>ADD UNIT FINISH</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "post">
 					<div class = "form-group">
-						<label>Description:</label>
-						<textarea class="form-control" rows="3" name = "finishesname" required = "required"></textarea>
+						<label>New Unit Finish:</label>
+						<input type = "text" class="form-control" name = "finishesname" required = "required">
 					</div>
 					<div class = "form-group">
 						<button type = "submit" class = "btn" name = "submit">Save</button>

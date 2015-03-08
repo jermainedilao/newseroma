@@ -16,11 +16,11 @@
 <html>
 	<head><title>Update Amenities</title>
 	<body>
-		<h4>UPDATE AMENITIES</h4><hr/>
+		<h4>UPDATE CONDOMINIUM AMENITY</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "POST">
 					<div class = "form-group">
-						<label>Amenity</label>
+						<label>Condominium Amenity</label>
 						<select name = "amenityid" class = "form-control" required="required">
 						  <option value = "" disabled>Please select</option>
 						  <?php foreach($getupdateamenities as $d): ?>
@@ -30,7 +30,7 @@
 					</div>
 					<div class = "form-group">
 						<label>Update Selected Amenity:</label>
-						<textarea class = "form-control" rows = "3" name = "amenityname" ></textarea>
+						<input type="text" class = "form-control" name = "amenityname" >
 					</div>
 					<div class = "form-group">
 						<label>Update Status:</label>

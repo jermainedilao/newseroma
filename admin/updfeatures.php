@@ -13,13 +13,13 @@
  ?>
 <!DOCTYPE html>
 <html>
-	<head><title>updfeatures.php</title>
+	<head><title>Update Condominium Feature</title>
 	<body>
-		<h4>UPDATE FEATURES</h4><hr/>
+		<h4>UPDATE CONDOMINIUM FEATURE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method = "POST">
 					<div class = "form-group">
-						<label>Feature</label>
+						<label>Condominium Feature</label>
 						<select name = "featureid" class = "form-control" required="required">
 						    <option value = "" disabled>Please select</option>
 							<?php foreach($getupdatefeature as $d): ?>
@@ -29,7 +29,7 @@
 					</div>
 					<div class = "form-group">
 						<label>Update Selected Feature:</label>
-						<textarea class = "form-control" rows = "3" name = "featurename" ></textarea>
+						<input type="text" class = "form-control" name = "featurename" >
 					</div>
 					<div class = "form-group">
 						<label>Update Status:</label>

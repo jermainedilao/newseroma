@@ -15,9 +15,9 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>Delete Features</title>
+	<head><title>Delete Condominium Feature</title>
 	<body>
-		<h4>DELETE FEATURES</h4><hr/>
+		<h4>DELETE CONDOMINIUM FEATURE</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">

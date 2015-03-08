@@ -15,9 +15,9 @@
 
 <!DOCTYPE html>
 <html>
-	<head><title>delfinishes.php</title>
+	<head><title>Delete Unit Finish</title>
 	<body>
-		<h4>DELETE FINISHES</h4><hr/>
+		<h4>DELETE UNIT FINISH</h4><hr/>
 			<div class = "col-md-3">
 				<form class = "form" method="POST">
 					<div class = "form-group">
