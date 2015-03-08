@@ -2,7 +2,7 @@
 	$viewbrokerprofile = view_broker_profile($_SESSION['userid']);
 	$id = $_SESSION['userid'];
 	set_msg($id);
-	$getbrokermsgs = get_broker_msgs($id);
+	$getbrokerrepliedmsgs = get_broker_replied_msgs($id);
 	$countnewmsg = count_new_msg($id);
 ?>
 
@@ -26,15 +26,16 @@
 				</div>
 		</div>
 		<div class = "col-md-8">
-			   <h3 class = "pull-left">ANSWERED MESSAGES</h3>
-         <br /><br /><br /><br />
-          <?php foreach($getbrokermsgs as $m): ?>
-            Name: <?php echo htmlentities($m['sender']); ?><br>
-            Email: <?php echo htmlentities($m['senderemail']); ?><br>
-            <small><?php echo htmlentities($m['timestamp']); ?></small><br>
-            Message: <?php echo htmlentities($m['message']); ?><br>
-            <hr><br>
-          <?php endforeach; ?>	
+		    <h3 class = "pull-left">ANSWERED MESSAGES</h3>
+			<br /><br /><br /><br />
+			<?php foreach($getbrokerrepliedmsgs as $m): ?>
+				<b>Name:</b> <?php echo htmlentities($m['sender']); ?><br>
+				<b>Email:</b> <?php echo htmlentities($m['senderemail']); ?><br>
+				<small><?php echo htmlentities($m['timestamp']); ?></small><br>
+				<b>Message:</b> <?php echo htmlentities($m['message']); ?><br>
+				<b>Reply:</b> <?php echo htmlentities($m['reply']); ?><br>
+				<hr><br>
+			<?php endforeach; ?>	
 		</div>
 	</body>
 </html>

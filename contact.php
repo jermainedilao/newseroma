@@ -13,7 +13,7 @@
     $message = trim($_POST['message']);
     send_message($sender, $senderemail, $recipient, $message);
     echo "<div class = 'alert alert-success' style = 'width: 100%;'>Message sent.</div>";
-    //header("Refresh:1");
+    header("Refresh:1");
   }
   $getactiveusers = get_active_users(); 
 ?>
@@ -54,10 +54,10 @@
 			<form class = "form" method = "post">
 				<div class = "form-group">
 					<label>Name</label><br>
-						<input type = "text" name = "sender" class = "form-control"><br>
+						<input type = "text" name = "sender" class = "form-control" required="required"><br>
 					<label>Email</label><br>
-						<input type = "email" name = "senderemail" class = "form-control"><br>
-          <label>Send message to:</label>  
+						<input type = "email" name = "senderemail" class = "form-control" required="required"><br>
+					<label>Send message to:</label>  
 						<select name = "recipient" class = "form-control" required="required">
 						  <option value = "" disabled>Please select</option>
 							<?php foreach($getactiveusers as $d): ?>
@@ -65,7 +65,7 @@
 							<?php endforeach; ?>
 						</select>
 					<label>Message</label><br>
-					<textarea class="form-control" name = "message" cols="60" rows="5"></textarea><br>
+					<textarea class="form-control" name = "message" cols="60" rows="5" required="required"></textarea><br>
 					<button type = "submit" name="send" class = "btn">Send</button>
 				</div>
 			</form>

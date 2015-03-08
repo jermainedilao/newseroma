@@ -1,6 +1,6 @@
 <?php
 	include "../db.php";
-	
+	ob_start();
 	if($_SESSION['isloginbroker'] == true || $_SESSION['isloginadmin'] == true)
 	{
 		$page = isset($_GET['p']) ? $_GET['p'] : 'broker';

@@ -691,15 +691,26 @@
       $db = site_db();
       $sql = "insert into messages (sender, senderemail, recipient, message, viewed, messagestatus) values (?,?,?,?,?,?)";
       $st = $db->prepare($sql);
-      $st->execute(array($sender, $senderemail, $recipient, $message, 0, 1));
+      $st->execute(array($sender, $senderemail, $recipient, $message, 0, 0));
       $db = null;
    }
 
    function get_broker_msgs($id){
-    $db = site_db();
-		$sql = "select * from messages where recipient=?";
+		$db = site_db();
+		$sql = "select * from messages where recipient=? and messagestatus = ? order by timestamp desc";
 		$st = $db->prepare($sql);
-		$st->execute(array($id));
+		$st->execute(array($id, 0));
+		$rows = $st->fetchAll();
+		$db = null;
+		
+		return $rows;
+   }
+   
+   function get_broker_replied_msgs($id){
+		$db = site_db();
+		$sql = "select * from messages where recipient=? and messagestatus = ? order by timestamp desc";
+		$st = $db->prepare($sql);
+		$st->execute(array($id, 1));
 		$rows = $st->fetchAll();
 		$db = null;
 		
@@ -730,3 +741,11 @@
      $db = null;
    }
    
+   function reply_message($messageid, $messagereply, $replytimestamp)
+   {
+	 $db = site_db();
+	 $sql = "update messages set reply = ?, replytimestamp = ?, messagestatus = ?  where messageid = ?";
+	 $st = $db->prepare($sql);
+	 $st->execute(array($messagereply, $replytimestamp, 1, $messageid));
+	 $db = null;
+   }

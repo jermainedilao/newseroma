@@ -1,6 +1,6 @@
 <?php
 	include "db.php";
-	
+	ob_start();
 	if(isset($_SESSION['isloginadmin']) && $_SESSION['isloginadmin'] == true)
 		header('Location:admin');
 	else if(isset($_SESSION['isloginbroker']) && $_SESSION['isloginbroker'] == true)
