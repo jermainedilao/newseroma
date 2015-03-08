@@ -36,7 +36,7 @@
 				</div>
 		</div>
 		<div class = "col-md-8">
-		 <h3 class = "pull-left">MESSAGES</h3>
+		 <h3 class = "pull-left">PENDING MESSAGES</h3>
 		 <br /><br /><br /><br />
 		  <?php foreach($getbrokermsgs as $m): ?>
 			<b>Name: </b><?php echo htmlentities($m['sender']); ?><br>
