@@ -31,7 +31,7 @@
 				<b>Email:</b> <?php echo htmlentities($m['senderemail']); ?><br><br>
 				<small><em><b>Received: </b><?php echo htmlentities($m['timestamp']); ?></em></small><br><br>
 				<b>Message:</b> <br><?php echo htmlentities($m['message']); ?><br><br>
-				<b>To:</b><br> <?php $getbroker = get_broker($m['recipient']); echo htmlentities($getbroker['name']); ?><br><br/>
+				<b>To:</b><br> <?php $allmsgsgetbroker = all_msgs_get_broker($m['recipient']); echo htmlentities($allmsgsgetbroker['name']); ?><br><br/>
 				<b>Reply:</b><br> <?php echo htmlentities($m['reply']); ?><br>
 				<hr><br>
 			<?php endforeach; ?>	

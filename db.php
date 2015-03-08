@@ -729,7 +729,7 @@
 		return $rows;
     }
    
-   	function get_broker($id)
+   	function all_msgs_get_broker($id)
 	{
 		$db = site_db();
 		$sql = "select * from users where id = ?";
