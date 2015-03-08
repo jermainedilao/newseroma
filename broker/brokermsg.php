@@ -11,6 +11,7 @@
 		$messagereply = $_POST['messagereply'];
 		$replytimestamp = date('F j, Y, g:i a');
 		reply_message($messageid, $messagereply, $replytimestamp);
+		echo "<div class = 'alert alert-success' style = 'width: 100%;'>Message sent.</div>";
 		header('Refresh:1');
 	}
 ?>

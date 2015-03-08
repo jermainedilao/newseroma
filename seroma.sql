@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2015 at 01:05 AM
+-- Generation Time: Mar 08, 2015 at 01:15 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `reply` varchar(500) NOT NULL,
   `replytimestamp` varchar(50) NOT NULL,
   `messagestatus` smallint(6) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `messages`
@@ -150,10 +150,14 @@ INSERT INTO `messages` (`messageid`, `sender`, `senderemail`, `timestamp`, `reci
 (13, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:01:28', 3, 'I love John Tolentino and Kvein Aballe <3', 1, 'Yuck! Three timer!', 'March 8, 2015, 1:01 am', 1),
 (14, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:01:21', 3, 'And I love you too <3', 1, 'Shup Rosie! You''re so kadiri! You''re already inlove with kvein!!!! Two-timer!', 'March 8, 2015, 1:01 am', 1),
 (16, 'Kim Chiu', 'kimchiu@gmail.com', '2015-03-07 23:47:25', 2, 'I really like you! And I think I love you na! <3 Can we meet each other please??? <3.<3', 1, 'Okay.. Let''s meet at starbucks, but sorry in advance.. Im already taken ,</3', 'March 8, 2015, 12:47 am', 1),
-(17, 'Rosie', 'mrosetan@gmail.com', '2015-03-07 21:04:43', 3, 'And I love you too <3', 1, '', '', 0),
+(17, 'Rosie', 'mrosetan@gmail.com', '2015-03-08 00:08:18', 3, 'And I love you too <3', 1, 'Kaluod oist!!!!', 'March 8, 2015, 1:08 am', 1),
 (18, 'Janella Salvador', 'iamsuperjanella@gmail.com', '2015-03-07 23:52:49', 2, 'Hi, I like you too. And I think I love you na! <3', 1, 'Im sorry. Im already taken.. </3', 'March 8, 2015, 12:52 am', 1),
 (19, 'Kim Chiu again...', 'kimchiu@gmail.com', '2015-03-07 23:59:16', 2, 'Talaga?? Break nlng kayo please? :( Tayo nlang? :(', 1, 'Ano ka ba... Lumayo ka sa akin. Ang landi mo p*ta ka! Kadiri mo kim chiu!', 'March 8, 2015, 12:59 am', 1),
-(20, 'Kim Chiu again and again', 'kimchiu@gmail.com', '2015-03-08 00:00:44', 2, 'Huhuhuhuhhuhuhu :(( Ill find another YOU nlang :(( huhu </3', 1, 'Okay... Go to BDO. They will find ways.... :) Smile ka lang. Okay lang. Mdami pang gwapo na kagaya ko jan :D', 'March 8, 2015, 1:00 am', 1);
+(20, 'Kim Chiu again and again', 'kimchiu@gmail.com', '2015-03-08 00:00:44', 2, 'Huhuhuhuhhuhuhu :(( Ill find another YOU nlang :(( huhu </3', 1, 'Okay... Go to BDO. They will find ways.... :) Smile ka lang. Okay lang. Mdami pang gwapo na kagaya ko jan :D', 'March 8, 2015, 1:00 am', 1),
+(21, 'Heubert Ferolino', 'ferlintrev@icloud.com', '2015-03-08 00:09:38', 3, 'Gigaon man ka oist! Mura man kag Gigahertz!', 1, '', '', 0),
+(22, 'Jigger Ababon', 'jiggelets@gmail.com', '2015-03-08 00:10:25', 3, 'Jigaon bya oist!', 0, '', '', 0),
+(23, 'Crown Regency', 'crownregency@gmail.com', '2015-03-08 00:14:08', 1, 'Hi! Goodmorning. We would like to buy your site :) how much? PM me...', 1, '50 million dollars. Because you''re not rich enough. You okay with that?', 'March 8, 2015, 1:14 am', 1),
+(24, 'Radisson Blu', 'radissonblu@gmail.com', '2015-03-08 00:13:49', 1, 'Hi! Goodmorning :) We would like to buy your site :) How much? PM me....', 1, '100 million dollars.. You okay with that?', 'March 8, 2015, 1:13 am', 1);
 
 -- --------------------------------------------------------
 
@@ -238,7 +242,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `name`, `contact`, `email`, `status`) VALUES
 (1, 'admin', 'admin', 'Condominium Management', '123456789', 'admin@admin.com', 1),
 (2, 'jermaine', 'jermaine', 'Jermaine L. Dilao', '09228052232', 'jermainedilao@gmail.com', 1),
-(3, 'michael', 'michael', 'Michael Mativo', '09336071385', 'michaelmativo08@gmail.com', 1);
+(3, 'michael', 'michael', 'Michael Gigaon Mativo', '09336071385', 'michaelmativo08@gmail.com', 1);
 
 --
 -- Indexes for dumped tables
@@ -320,7 +324,7 @@ MODIFY `finishesid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-MODIFY `messageid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+MODIFY `messageid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `subscriptions`
 --

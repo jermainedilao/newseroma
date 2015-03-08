@@ -1,7 +1,6 @@
 <?php
 	$viewbrokerprofile = view_broker_profile($_SESSION['userid']);
 	$id = $_SESSION['userid'];
-	set_msg($id);
 	$getbrokerrepliedmsgs = get_broker_replied_msgs($id);
 	$countnewmsg = count_new_msg($id);
 ?>

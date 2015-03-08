@@ -4,6 +4,16 @@
 	set_msg($id);
 	$getbrokermsgs = get_broker_msgs($id);
 	$countnewmsg = count_new_msg($id);
+	
+	if(isset($_POST['submit']))
+	{
+		$messageid = $_POST['submit'];
+		$messagereply = $_POST['messagereply'];
+		$replytimestamp = date('F j, Y, g:i a');
+		reply_message($messageid, $messagereply, $replytimestamp);
+		echo "<div class = 'alert alert-success' style = 'width: 100%;'>Message sent.</div>";
+		header('Refresh:1');
+	}
 ?>
 
 <!DOCTYPE html>
