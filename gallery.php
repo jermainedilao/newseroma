@@ -57,16 +57,16 @@
 						<div id="banner-fade">
 							<!-- start Basic Jquery Slider -->
 							<ul class="bjqs">
-								<li><img src="gallery_files/img/1.jpg" title = "Experience the clean and green environment."></li>
-								<li><img src="gallery_files/img/2.jpg" title = "Experience the Seroma feeling."></li>
-								<li><img src="gallery_files/img/3.jpg" title = "Unique and grand."></li>
-								<li><img src="gallery_files/img/4.jpg"></li>
-								<li><img src="gallery_files/img/5.jpg"></li>
-								<li><img src="gallery_files/img/6.jpg"></li>
-								<li><img src="gallery_files/img/7.jpg"></li>
-								<li><img src="gallery_files/img/8.jpg"></li>
-								<li><img src="gallery_files/img/9.jpg"></li>
-								<li><img src="gallery_files/img/10.jpg"></li>
+								<li><img src="gallery_files/img/1.jpg" title = "Take a stroll in your own private paradise."></li>
+								<li><img src="gallery_files/img/2.jpg" title = "A grand design for urban living."></li>
+								<li><img src="gallery_files/img/3.jpg" title = "Live within a grand island destination."></li>
+								<li><img src="gallery_files/img/4.jpg" title = "A grand address at the heart of Cebu."></li>
+								<li><img src="gallery_files/img/5.jpg" title = "Embark your own grand vacation today."></li>
+								<li><img src="gallery_files/img/6.jpg" title = "Fun has never been this fun!"></li>
+								<li><img src="gallery_files/img/7.jpg" title = "Built around you and how you're meant to live."></li>
+								<li><img src="gallery_files/img/8.jpg" title = "A grander perspective."></li>
+								<li><img src="gallery_files/img/9.jpg" title = "A grander lifestyle."></li>
+								<li><img src="gallery_files/img/10.jpg" title = "Seroma: My City. My Resort. My Home."></li>
 							</ul>
 							<!-- end Basic jQuery Slider -->
 						</div>
