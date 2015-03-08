@@ -24,7 +24,7 @@
 				</div>
 		</div>
 		<div class = "col-md-8">
-		    <h3 class = "pull-left">ANSWERED MESSAGES</h3>
+		    <h3 class = "pull-left">ALL MESSAGES</h3>
 			<br /><br /><br /><br />
 			<?php foreach($getallmsgs as $m): ?>
 				<b>Name:</b> <?php echo htmlentities($m['sender']); ?><br><br>
