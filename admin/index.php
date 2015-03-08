@@ -176,30 +176,30 @@
 								<ul class="dropdown-menu" role="menu">
 									<li><a href ="?p=addarticle">Article</a></li>
 									<li><a href ="?p=addbroker">Broker</a></li>
-									<li><a href ="?p=addunits">Units</a></li>
-									<li><a href ="?p=addfinishes">Finishes</a></li>
-									<li><a href ="?p=addfeatures">Features</a></li>
-									<li><a href ="?p=addamenities">Amenities</a></li>
+									<li><a href ="?p=addunits">Unit</a></li>
+									<li><a href ="?p=addfinishes">Unit Finish</a></li>
+									<li><a href ="?p=addfeatures">Condominium Feature</a></li>
+									<li><a href ="?p=addamenities">Condominium Amenity</a></li>
 								</ul>
 							</li>
 							<li class = "dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Update<span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href ="?p=updarticle">Article</a></li>
-									<li><a href ="?p=updunits">Units</a></li>
-									<li><a href ="?p=updfinishes">Finishes</a></li>
-									<li><a href ="?p=updfeatures">Features</a></li>
-								<li><a href ="?p=updamenities">Amenities</a></li>
+									<li><a href ="?p=updunits">Unit</a></li>
+									<li><a href ="?p=updfinishes">Unit Finish</a></li>
+									<li><a href ="?p=updfeatures">Condominium Feature</a></li>
+								<li><a href ="?p=updamenities">Condominium Amenity</a></li>
 								</ul>
 							</li>
 							<li class = "dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Delete<span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href ="?p=delarticle">Article</a></li>
-									<li><a href ="?p=delunits">Units</a></li>
-									<li><a href ="?p=delfinishes">Finishes</a></li>
-									<li><a href ="?p=delfeatures">Features</a></li>
-									<li><a href ="?p=delamenities">Amenities</a></li>
+									<li><a href ="?p=delunits">Unit</a></li>
+									<li><a href ="?p=delfinishes">Unit Finish</a></li>
+									<li><a href ="?p=delfeatures">Condominium Feature</a></li>
+									<li><a href ="?p=delamenities">Condominium Amenity</a></li>
 								</ul>
 							</li>
 							<li>
