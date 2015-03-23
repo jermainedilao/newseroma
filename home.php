@@ -97,8 +97,8 @@
 					<p>
 						<?php echo htmlentities($a['articlebody']); ?>
 					</p>
-				<div class="fb-like" data-href="https://seroma.com" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>	
 				</div><br />
+				<div class="fb-like" data-href="https://seroma.com" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>	<hr/>
 			<?php endforeach; ?>	
 		</div>
 	</body>

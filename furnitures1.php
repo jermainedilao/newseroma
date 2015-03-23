@@ -59,7 +59,7 @@
 						</p>
 					</div>
 					<div class = "col-md-5 pull-right">
-						<img src = "images/image1.jpg" width = "350" height = "250"/>
+						<img src = "images/image3.jpg" width = "350" height = "250"/>
 					</div>
 				</div>
 		</div>
