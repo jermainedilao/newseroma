@@ -1,4 +1,4 @@
-AYAW PANGHILABOT SA UBAN FILES IMOHANG FILE LNG HILABTI
-
--ROSIE 
--IAMROSIE I AM A BABOY!!!
+Create
+    seroma db
+Import
+    seroma.sql
